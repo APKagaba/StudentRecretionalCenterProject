@@ -1,0 +1,64 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Images/SRC.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.email-box {
+    width: 620px;
+    height: 720px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 15px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 36px;
+}
+
+
+#btnSend {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+    #btnSend:hover {
+        cursor: pointer;
+        background: #39dc79;
+        color: #000;
+    }
+
+#btnDiscard {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+    #btnDiscard:hover {
+        cursor: pointer;
+        background: #39dc79;
+        color: #000;
+    }
+

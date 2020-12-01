@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Staff.master.cs" Inherits="CIS420SmitPatel.Staff" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link href="StaffMaster.css" rel="stylesheet" />
+
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <nav>
+                 <a href="StaffHome.aspx"><h2 class="logo">UofL SRC</h2></a>
+                    <ul class="nav_links" id="manager-nav">
+                        <asp:Panel ID="pnlManager" runat="server" Visible="False">
+
+                             <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle">Manage</a>
+
+                            <ul class="dropdown-menu">
+                                <li><asp:Button ID="btnMaintenance"  runat="server" CssClass="dropdown-item" Text="Manage Maintenance" OnClick="btnMaintenance_Click" />
+                                    </li>
+                                    
+                                <li><asp:Button ID="btnCountSheet" runat="server" CssClass="dropdown-item" Text="Manage Count Sheet" OnClick="btnCountSheet_Click" />
+                                    </li>
+                                
+                            </ul>
+                                 
+                        <li><a href="ManageMember.aspx">Manage Members</a></li>
+                        <li><a href="ManageStaff.aspx">Manage Staff</a></li>
+                        </asp:Panel>
+                        </ul>
+                       
+                
+
+                        <ul class="nav_links">
+                        <li><a href="StaffHome.aspx">Home</a></li>
+                        
+                        <li><a href="StaffCountSheet.aspx">Count Sheet</a></li>
+                        <li><a href="StaffMaintenance.aspx">Maintenance</a></li>
+                            <li><a href="EmailSearch.aspx">Email</a></li>
+                        
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle">
+                            <img src="Images/user3.png" class="userIcon" />
+                                                      </a>
+                            <ul class="dropdown-menu">
+                                <li><a >
+                                    <asp:Label ID="lblUserName" runat="server" CssClass="dropdown-item" Text=""></asp:Label></a></li>
+                                <li>
+                                    <asp:Button ID="btnSignout" runat="server" Text="Log Out" CssClass="dropdown-item" OnClick="btnSignout_Click" /></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>       
+            </nav>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

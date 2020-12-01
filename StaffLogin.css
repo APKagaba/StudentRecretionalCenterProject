@@ -1,0 +1,99 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    background-image: url('Images/img12.jpg');
+}
+
+.login-box {
+    width: 320px;
+    height: 500px;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 15px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+#txtUserName {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#txtPassword {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#btnLogin {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#txtPassword, #txtUserName {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+#btnLogin {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+    #btnLogin:hover {
+        cursor: pointer;
+        background: #39dc79;
+        color: #000;
+    }
+
+#linkForgot {
+    text-decoration: none;
+    font-size: 14px;
+    color: darkgrey;
+}
+
+#linkToBack {
+    text-decoration: none;
+    font-size: 18px;
+    color: darkgrey;
+}
+
+#linkForgot:hover {
+    color: #ffc107
+}
+
+#linkToBack:hover {
+    color: #ffc107
+}
+
+
+.inputError {
+    color: #E87C03;
+    margin-bottom: -6px;
+    padding: 6px 3px;
+}

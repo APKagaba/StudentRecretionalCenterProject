@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MemberMaster.master.cs" Inherits="CIS420SmitPatel.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="MemberMaster.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav>
+                 <a href="Profile2.aspx"><h2 class="logo">UofL SRC</h2></a>
+
+                        <ul class="nav_links">
+                        <li><a href="Profile2.aspx">Home</a></li>
+                        
+                        <li><a href="Locker.aspx">Locker</a></li>
+                        
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle">
+                            <img src="Images/user3.png" class="userIcon" />
+                                                      </a>
+                            <ul class="dropdown-menu">
+                                <li><a >
+                                    <asp:Label ID="lblUserName" runat="server" CssClass="dropdown-item" Text=""></asp:Label></a></li>
+                                <li>
+                                    <asp:Button ID="btnSignout" runat="server" Text="Log Out" CssClass="dropdown-item" OnClick="btnSignout_Click" /></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>       
+            </nav>
+            <asp:ContentPlaceHolder ID="Body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿body {
+}
+
+h1 {
+    float: none;
+    position: sticky;
+}
+
+#divleft {
+    float: left;
+    position: relative;
+    border: 100px;
+    width: 500px;
+}
+
+#image1 {
+    position: sticky;
+    float: none;
+    margin-left:100px;
+}
+
+#divright {
+    float: right;
+    position: relative;
+    border: 100px;
+}
+
+#div3 {
+    float: left;
+}

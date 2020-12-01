@@ -1,0 +1,115 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li, a, #btnSignout {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 3%;
+    background-color: #24252A;
+    height: 110px;
+}
+
+.logo {
+    cursor: pointer;
+    font-family: Mali;
+    color: white;
+    font-size: 36px;
+    margin-top: 1%;
+}
+
+.nav_links {
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    float: right;
+}
+
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+        .nav_links li a {
+            transition: all 0.3s ease 0s;
+            text-decoration: none;
+            color: white;
+        }
+
+            .nav_links li a:hover, #btnMaintenance:hover, #btnCountSheet:hover {
+                color: #0088a9;
+            }
+
+#manager-nav {
+    position: absolute;
+    right: 24%;
+    margin-top: 0.2%;
+}
+
+#btnSignout {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    align-items: center;
+}
+
+    #btnSignout:hover {
+        background-color: rgba(0,136,169,0.8);
+    }
+
+
+
+.nav_links li ul {
+    display: none;
+    flex-direction: column;
+}
+
+
+.nav_links li:hover ul {
+    display: block
+}
+
+.dropdown {
+}
+
+.dropdown-menu {
+    background-color: #edf0f1;
+    align-items: center;
+    color: black;
+    left: auto;
+    width: auto;
+}
+
+.dropdown-item {
+    color: black;
+    width: auto;
+}
+
+
+.userIcon {
+    width: 38px;
+    height: 38px;
+}
+
+#lblUserName {
+    color: #24252A;
+    font-size: 20px;
+}
